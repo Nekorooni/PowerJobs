@@ -1,10 +1,7 @@
 <?php
 require('inc/base-header.php');
-if (isset($_GET['id'])){
-    switch($_GET['id']){
-        case 'home':
-            include('inc/page_home.php');
-            break;
+if (isset($_GET['page'])){
+    switch($_GET['page']){
         case 'about':
             include('inc/page_about.php');
             break;
@@ -24,10 +21,11 @@ if (isset($_GET['id'])){
             include('inc/page_admin.php');
             break;
         default:
-            echo "nope";
+        case 'home':
+            include('inc/page_home.php');
             break;
     }
 }else{
-    echo "no id";
+    include('inc/page_home.php');
 }
 require('inc/base-footer.php');

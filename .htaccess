@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^(.*)(/.*)$ index.php?page=$1&%{QUERY_STRING}
+RewriteRule ^(.*)/$ index.php?page=$1&%{QUERY_STRING}

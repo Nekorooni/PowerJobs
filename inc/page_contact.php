@@ -24,14 +24,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-<div class="item">
-    <h1>Neem contact op</h1>
-    <form method="post" action="<?php echo basename($_SERVER['REQUEST_URI']);?>">
-        <label>Naam: <input type="text" name="name" placeholder="Naam.." required></label>
-        <label>Email: <input type="text" name="email" placeholder="Email.." required></label>
-        <label>Vraag: <textarea name="content" placeholder="Vraag ons iets.." rows="10" required></textarea></label>
-        <div class="g-recaptcha" data-sitekey="6LfWkB8UAAAAABavAEj475iiWxoarcCwuxzVBS1b"></div>
-        <input type="submit" value="Versturen">
-        <?php echo $err; ?>
-    </form>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Contact</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <h1>Neem contact op</h1>
+        <form method="post" action="<?php echo basename($_SERVER['REQUEST_URI']);?>">
+            <label>Naam: <input type="text" name="name" placeholder="Naam.." required></label>
+            <label>Email: <input type="text" name="email" placeholder="Email.." required></label>
+            <label>Vraag: <textarea name="content" placeholder="Vraag ons iets.." rows="10" required></textarea></label>
+            <div class="g-recaptcha" data-sitekey="6LfWkB8UAAAAABavAEj475iiWxoarcCwuxzVBS1b"></div>
+            <input type="submit" value="Versturen">
+            <?php echo $err; ?>
+        </form>
+    </div>
 </div>

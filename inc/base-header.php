@@ -26,11 +26,11 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/?id=home">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Over ons</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/">Over ons</a></li>
+                <li class="nav-item"><a class="nav-link" href="/faq/">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
