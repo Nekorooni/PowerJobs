@@ -1,0 +1,13 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 2rem;
+}
+
+.ellipis {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+}
